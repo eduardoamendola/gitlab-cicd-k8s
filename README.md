@@ -1,10 +1,10 @@
-# Python Flask - Demo Web Application
+# Kubernetes deployment with Gitlab CI/CD 
 
-This is a simple Python Flask web application. The app provides system information and a realtime monitoring screen with dials showing CPU, memory, IO and process information.
+This is a simple Python Flask web application that is used to demonstrate the GitLab CI/CD to deploy into a Kubernetes cluster. The app provides system information and a realtime monitoring screen with dials showing CPU, memory, IO and process information.
 
 The app has been designed with cloud native demos & containers in mind, in order to provide a real working application for deployment, something more than "hello-world" but with the minimum of pre-reqs. It is not intended as a complete example of a fully functioning architecture or complex software design.
 
-Typical uses would be deployment to Kubernetes, demos of Docker, CI/CD (build pipelines are provided), deployment to cloud (Azure) monitoring, auto-scaling
+Typical uses would be deployment to a Kubernetes cluster with Gitlab CI/CD (build pipelines are provided).
 
 ## Screenshot
 
@@ -17,12 +17,6 @@ Typical uses would be deployment to Kubernetes, demos of Docker, CI/CD (build pi
 - Be using Linux, WSL or MacOS, with bash, make etc
 - [Python 3.9+](https://www.python.org/downloads/) - for running locally, linting, running tests etc
 - [Docker](https://docs.docker.com/get-docker/) - for running as a container, or image build and push
-
-Clone the project to any directory where you do development work
-
-```
-git clone https://github.com/benc-uk/python-demoapp.git
-```
 
 ### Makefile
 
