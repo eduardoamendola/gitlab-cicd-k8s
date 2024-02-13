@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-demo-deployment
+  labels:
+    app: python-demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-demo-app
+  template:
+    metadata:
+      labels:
+        app: python-demo-app
+    spec:
+      containers:
+      - image: registry.gitlab.com/eduardo_amendola/simple-cicd:latest
+        name: python-demo-app
+        ports:
+        - containerPort: 5000
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: python-demo-secret

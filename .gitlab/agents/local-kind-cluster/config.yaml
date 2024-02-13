@@ -1,0 +1,4 @@
+ci_access:
+  projects:
+    - id: eduardo_amendola/simple-cicd
+    # Add more allowed repos here if an interaction is necesary
